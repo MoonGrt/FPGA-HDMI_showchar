@@ -14,9 +14,9 @@
   <a href="https://github.com/MoonGrt/FPGA-HDMI_showchar/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
-  <h3 align="center">工程名称</h3>
+  <h3 align="center">HDMI_showchar</h3>
   <p align="center">
-    简单的描述…………
+    HDMI接口显示ascii字符
     <br />
     <a href="https://github.com/MoonGrt/FPGA-HDMI_showchar"><strong>探索本项目的文档 ?</strong></a>
     <br />
@@ -29,7 +29,7 @@
   </p>
 </p>
 
-ProjectName and Description
+使用HDMI接口在屏幕上显示ascii字符。基于易灵思开发板。
  
 ## 目录
 
@@ -49,26 +49,19 @@ ProjectName and Description
 
 ###### 开发前的配置要求
 
-1. xxxxx x.x.x
-2. xxxxx x.x.x
+1. 易灵思 ti60f225
+2. vivado 2018.3
 
 ### 文件目录说明
 
 ```
 filetree 
-├── ARCHITECTURE.md
-├── /docs/
-│  ├── /rules/
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-├── manage.py
+├── README.md
 ```
 
 ### 框架
 
-- [xxxxxxx](https://getbootstrap.com)
-- [xxxxxxx](https://jquery.com)
-- [xxxxxxx](https://laravel.com)
+- [xxxxxxx](xxxx)
 
 ### 贡献者
 
