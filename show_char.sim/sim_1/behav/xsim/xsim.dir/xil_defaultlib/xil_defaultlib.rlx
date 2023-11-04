@@ -3,10 +3,10 @@
 Dec  7 2018
 00:33:28
 F:/Project/FPAG/Project_18.3/show_char/show_char.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sim_1/new/rb_top.v,1699114196,verilog,,,,tb_top,,,,,,,,
 F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/dvi_transmitter_top.v,1699112821,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/encode.v,,dvi_transmitter_top,,,,,,,,
-F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/encode.v,1699112620,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/ram_char.v,,encode,,,,,,,,
-,,,,,,hdmi_tx,,,,,,,,
-,,,,,,,,,,,,,,
+F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/encode.v,1699112620,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/hdmi_tx.v,,encode,,,,,,,,
+F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/hdmi_tx.v,1699114333,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/ram_char.v,,hdmi_tx,,,,,,,,
 F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/ram_char.v,1699112627,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/video_display.v,,ram_char,,,,,,,,
-F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/video_display.v,1699112598,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/video_driver.v,,video_display,,,,,,,,
-F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/video_driver.v,1699082685,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/hdmi_tx.v,,video_driver,,,,,,,,
+F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/video_display.v,1699113716,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/video_driver.v,,video_display,,,,,,,,
+F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/video_driver.v,1699112577,verilog,,F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sim_1/new/rb_top.v,,video_driver,,,,,,,,

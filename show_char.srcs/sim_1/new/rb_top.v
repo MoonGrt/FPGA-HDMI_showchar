@@ -1,8 +1,7 @@
 `timescale  1ns / 1ps       
-
+`default_nettype none
 module tb_top;
 
-// hdmi_tx Inputs
 reg   hdmi_clk = 0 ;
 reg   hdmi_pll_LOCKED = 0 ;
 
@@ -21,7 +20,7 @@ wire  [9:0]  tmds_data2_TX_DATA            ;
 wire  tmds_data2_TX_RST                    ;
 wire  hpd                                  ;
 
-always #12.5 hdmi_clk = ~hdmi_clk; // 40mhz
+always #10 hdmi_clk = ~hdmi_clk; // 40mhz
 initial #100 hdmi_pll_LOCKED = 1;
 
 hdmi_tx  u_hdmi_tx (

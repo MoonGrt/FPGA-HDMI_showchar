@@ -11,8 +11,8 @@ module  video_display(
 );
 
 //parameter define
-localparam H_DISP = 11'd800;                       //分辨率--行
-localparam V_DISP = 11'd480;                       //分辨率--列
+localparam H_DISP = 11'd800;        //分辨率--行
+localparam V_DISP = 11'd480;        //分辨率--列
 localparam CHAR_WIDTH  = 6'd16;     //字符宽度
 localparam CHAR_HEIGHT = 6'd32;     //字符高度
 

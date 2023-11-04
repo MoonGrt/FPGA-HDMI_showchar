@@ -1,6 +1,6 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: G:/Xilinx1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7332dbee36a0442085e3cc366c11e2af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot hdmi_tx_behav xil_defaultlib.hdmi_tx xil_defaultlib.glbl -log elaborate.log 
+Running: G:/Xilinx1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7332dbee36a0442085e3cc366c11e2af --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -14,5 +14,6 @@ Compiling module xil_defaultlib.encode
 Compiling module xil_defaultlib.dvi_transmitter_top
 Compiling module xil_defaultlib.ram_char
 Compiling module xil_defaultlib.hdmi_tx
+Compiling module xil_defaultlib.tb_top
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot hdmi_tx_behav
+Built simulation snapshot tb_top_behav
