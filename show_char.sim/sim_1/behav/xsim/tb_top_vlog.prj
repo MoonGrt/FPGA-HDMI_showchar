@@ -3,7 +3,7 @@ verilog xil_defaultlib  \
 "../../../../show_char.srcs/sources_1/dvi_transmitter_top.v" \
 "../../../../show_char.srcs/sources_1/encode.v" \
 "../../../../show_char.srcs/sources_1/hdmi_tx.v" \
-"../../../../show_char.srcs/sources_1/ram_char.v" \
+"../../../../show_char.srcs/sources_1/new/ram_char1.v" \
 "../../../../show_char.srcs/sources_1/video_display.v" \
 "../../../../show_char.srcs/sources_1/video_driver.v" \
 "../../../../show_char.srcs/sim_1/new/rb_top.v" \

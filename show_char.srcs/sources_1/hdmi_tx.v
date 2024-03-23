@@ -96,9 +96,18 @@ dvi_transmitter_top dvi_transmitter_top(
     .tmds_oen       (hpd)
 );
 
-ram_char ram_char (
-/*i*/.raddr	(ascii),
-/*o*/.rdata (char_data)
+//ram_char ram_char (
+///*i*/.raddr	(ascii),
+///*o*/.rdata (char_data)
+//);
+
+ram_char1 #(
+	.DATA_WIDTH(512),
+	.ADDR_WIDTH(7),
+	.RAM_INIT_FILE("ram_init_file.inithex")
+)ram_char1(
+	.raddr (ascii),   
+	.rdata (char_data)
 );
 
 endmodule 

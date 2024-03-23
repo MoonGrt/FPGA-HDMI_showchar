@@ -4,16 +4,4 @@ Running: G:/Xilinx1/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 7332dbee3
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "F:/Project/FPAG/Project_18.3/show_char/show_char.srcs/sources_1/dvi_transmitter_top.v" Line 1. Module dvi_transmitter_top doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.video_driver
-Compiling module xil_defaultlib.video_display
-Compiling module xil_defaultlib.encode
-Compiling module xil_defaultlib.dvi_transmitter_top
-Compiling module xil_defaultlib.ram_char
-Compiling module xil_defaultlib.hdmi_tx
-Compiling module xil_defaultlib.tb_top
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_top_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

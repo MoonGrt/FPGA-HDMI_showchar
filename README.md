@@ -1,107 +1,126 @@
-# ProjectName
+<div id="top"></div>
 
-<!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <a href="https://github.com/MoonGrt/FPGA-HDMI_showchar/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-  <h3 align="center">HDMI_showchar</h3>
-  <p align="center">
-    HDMI接口显示ascii字符
-    <br />
-    <a href="https://github.com/MoonGrt/FPGA-HDMI_showchar"><strong>探索本项目的文档 ?</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/MoonGrt/FPGA-HDMI_showchar">查看Demo</a>
-    ·
-    <a href="https://github.com/MoonGrt/FPGA-HDMI_showchar/issues">报告Bug</a>
-    ·
-    <a href="https://github.com/MoonGrt/FPGA-HDMI_showchar/issues">提出新特性</a>
-  </p>
-</p>
+<div align="center">
+	<a href="https://github.com/MoonGrt/FPGA-HDMI_showchar">
+	<img src="images/logo.png" alt="Logo" width="80" height="80">
+	</a>
+<h3 align="center">FPGA-HDMI_showchar</h3>
+	<p align="center">
+	This FPGA-based module is designed to efficiently process and display characters on a screen. Its key features include flexible character handling, precise display control, optimized performance, and user-friendly interfaces, making it suitable for a wide range of applications in embedded systems and information displays.
+	<br />
+	<a href="https://github.com/MoonGrt/FPGA-HDMI_showchar"><strong>Explore the docs 禄</strong></a>
+	<br />
+	<br />
+	<a href="https://github.com/MoonGrt/FPGA-HDMI_showchar">View Demo</a>
+	路
+	<a href="https://github.com/MoonGrt/FPGA-HDMI_showchar/issues">Report Bug</a>
+	路
+	<a href="https://github.com/MoonGrt/FPGA-HDMI_showchar/issues">Request Feature</a>
+	</p>
+</div>
 
-使用HDMI接口在屏幕上显示ascii字符。基于易灵思开发板。
- 
-## 目录
 
-- [上手指南](#上手指南)
-  - [开发前的配置要求](#开发前的配置要求)
-- [文件目录说明](#文件目录说明)
-- [框架](#使用到的框架)
-- [贡献者](#贡献者)
-  - [如何参与开源项目](#参与开源项目)
-- [版本控制](#版本控制)
-- [作者](#作者)
-- [鸣谢](#鸣谢)
+<!-- CONTENTS -->
+<details open>
+  <summary>Contents</summary>
+  <ol>
+    <li><a href="#file-tree">File Tree</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-### 上手指南
 
-…………………………………………………………………………………………
-
-###### 开发前的配置要求
-
-1. 易灵思 ti60f225
-2. vivado 2018.3
-
-### 文件目录说明
+<!-- FILE TREE -->
+## File Tree
 
 ```
-filetree 
-├── README.md
+鈹斺攢 Project
+  鈹溾攢 ram_init_file.inithex
+  鈹溾攢 README.md
+  鈹溾攢 show_char.xpr
+  鈹溾攢 /images/
+  鈹溾攢 /show_char.cache/
+  鈹溾攢 /show_char.hw/
+  鈹溾攢 /show_char.ip_user_files/
+  鈹溾攢 /show_char.sim/
+  鈹斺攢 /show_char.srcs/
+    鈹溾攢 ram_init_file.inithex
+    鈹斺攢 /sources_1/
+      鈹溾攢 dvi_transmitter_top.v
+      鈹溾攢 encode.v
+      鈹溾攢 hdmi_tx.v
+      鈹溾攢 ram_char.v
+      鈹溾攢 ram_init_file.inithex
+      鈹溾攢 video_display.v
+      鈹溾攢 video_driver.v
+      鈹斺攢 /new/
+        鈹溾攢 ram_char1.v
+        鈹斺攢 ram_init_file.inithex
+
 ```
 
-### 框架
 
-- [xxxxxxx](xxxx)
-
-### 贡献者
-
-请阅读**CONTRIBUTING.md** 查阅为该项目做出贡献的开发者。
-
-#### 参与开源项目
-
-贡献使开源社区成为一个学习、激励和创造的绝佳场所。你所作的任何贡献都是**非常感谢**的。
-
+<!-- CONTRIBUTING -->
+## Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 1. Fork the Project
-2. Create your Feature Branch
-3. Commit your Changes
-4. Push to the Branch
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+<p align="right">(<a href="#top">top</a>)</p>
 
-### 版本控制
 
-该项目使用Git进行版本管理。您可以在repository参看当前可用版本。
+<!-- LICENSE -->
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+<p align="right">(<a href="#top">top</a>)</p>
 
-### 作者
 
-1561145394@qq.com
- *您也可以在贡献者名单中参看所有参与该项目的开发者。*
+<!-- CONTACT -->
+## Contact
+MoonGrt - 1561145394@qq.com
+Project Link: [MoonGrt/](https://github.com/MoonGrt/)
+<p align="right">(<a href="#top">top</a>)</p>
 
-### 鸣谢
 
-- [GitHub Pages](https://pages.github.com)
-- [xxxxxxxxxxxxxx](https://xxxx)
-- [xxxxxxxxxxxxxx](https://xxxx)
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)   
+<p align="right">(<a href="#top">top</a>)</p>
 
-<!-- links -->
-[contributors-shield]: https://img.shields.io/github/contributors/MoonGrt/FPGA-HDMI_showchar.svg?style=flat-square
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/MoonGrt/FPGA-HDMI_showchar.svg?style=for-the-badge
 [contributors-url]: https://github.com/MoonGrt/FPGA-HDMI_showchar/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/MoonGrt/FPGA-HDMI_showchar.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/MoonGrt/FPGA-HDMI_showchar.svg?style=for-the-badge
 [forks-url]: https://github.com/MoonGrt/FPGA-HDMI_showchar/network/members
-[stars-shield]: https://img.shields.io/github/stars/MoonGrt/FPGA-HDMI_showchar.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/MoonGrt/FPGA-HDMI_showchar.svg?style=for-the-badge
 [stars-url]: https://github.com/MoonGrt/FPGA-HDMI_showchar/stargazers
-[issues-shield]: https://img.shields.io/github/issues/MoonGrt/FPGA-HDMI_showchar.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/MoonGrt/FPGA-HDMI_showchar.svg
-[license-shield]: https://img.shields.io/github/license/MoonGrt/FPGA-HDMI_showchar.svg?style=flat-square
-[license-url]: https://github.com/MoonGrt/FPGA-HDMI_showchar/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/shaojintian
+[issues-shield]: https://img.shields.io/github/issues/MoonGrt/FPGA-HDMI_showchar.svg?style=for-the-badge
+[issues-url]: https://github.com/MoonGrt/FPGA-HDMI_showchar/issues
+[license-shield]: https://img.shields.io/github/license/MoonGrt/FPGA-HDMI_showchar.svg?style=for-the-badge
+[license-url]: https://github.com/MoonGrt/FPGA-HDMI_showchar/blob/master/LICENSE
+
