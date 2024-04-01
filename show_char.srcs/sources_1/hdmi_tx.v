@@ -56,7 +56,33 @@ assign tmds_data2_TX_DATA = ~tmds_data2;
 //**                    main code
 //*****************************************************
 
-video_driver  u_video_driver(
+video_display #(
+    .H_DISP     (11'd800),
+    .V_DISP     (11'd480),
+    .CHAR_WIDTH (6'd16),
+    .CHAR_HEIGHT(6'd32))
+video_display(
+    .pixel_clk      (hdmi_clk),
+    .sys_rst_n      (rst_n),
+    .pixel_xpos     (pixel_xpos_w),
+    .pixel_ypos     (pixel_ypos_w),
+    .pixel_data     (pixel_data_w),
+    .char_data      (char_data),
+    .ascii          (ascii)
+);
+
+video_driver #(
+    .H_SYNC     (11'd128),     //行同步
+    .H_BACK     (11'd88),      //行显示后沿
+    .H_DISP     (11'd800),     //行有效数据
+    .H_FRONT    (11'd40),      //行显示前沿
+    .H_TOTAL    (11'd1056),    //行扫描周期
+    .V_SYNC     (11'd3),       //场同步
+    .V_BACK     (11'd21),      //场显示后沿
+    .V_DISP     (11'd480),     //场有效数据
+    .V_FRONT    (11'd1),       //场显示前沿
+    .V_TOTAL    (11'd505))
+video_driver(
     .pixel_clk      (hdmi_clk),
     .sys_rst_n      (rst_n),
     .video_hs       (video_hs),
@@ -67,16 +93,6 @@ video_driver  u_video_driver(
     .pixel_xpos     (pixel_xpos_w),
     .pixel_ypos     (pixel_ypos_w),
 	.pixel_data     (pixel_data_w)
-);
-
-video_display  u_video_display(
-    .pixel_clk      (hdmi_clk),
-    .sys_rst_n      (rst_n),
-    .pixel_xpos     (pixel_xpos_w),
-    .pixel_ypos     (pixel_ypos_w),
-    .pixel_data     (pixel_data_w),
-    .char_data      (char_data),
-    .ascii          (ascii)
 );
 
 //HDMI驱动模块

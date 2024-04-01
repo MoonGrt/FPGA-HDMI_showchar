@@ -1,11 +1,24 @@
-module video_driver(
+module video_driver
+#(  // 默认 800*600 分辨率时序参数
+    parameter  H_SYNC   =  11'd128,     //行同步
+    parameter  H_BACK   =  11'd88,      //行显示后沿
+    parameter  H_DISP   =  11'd800,     //行有效数据
+    parameter  H_FRONT  =  11'd40,      //行显示前沿
+    parameter  H_TOTAL  =  11'd1056,    //行扫描周期
+    
+    parameter  V_SYNC   =  11'd3,       //场同步
+    parameter  V_BACK   =  11'd21,      //场显示后沿
+    parameter  V_DISP   =  11'd480,     //场有效数据
+    parameter  V_FRONT  =  11'd1,       //场显示前沿
+    parameter  V_TOTAL  =  11'd505      //场扫描周期)
+)(
     input           	pixel_clk	,
     input           	sys_rst_n	,
 		
     //RGB接口	
-    output          	video_hs	,     //行同步信号
-    output          	video_vs	,     //场同步信号
-    output          	video_de	,     //数据使能
+    output          	video_hs	,    //行同步信号
+    output          	video_vs	,    //场同步信号
+    output          	video_de	,    //数据使能
     output  	[23:0]  video_rgb	,    //RGB888颜色数据
     output	reg			data_req 	,
 	
@@ -13,21 +26,6 @@ module video_driver(
     output  reg	[10:0]  pixel_xpos	,   //像素点横坐标
     output  reg	[10:0]  pixel_ypos      //像素点纵坐标
 );
-
-//parameter define
-
-//800*600 分辨率时序参数
-parameter  H_SYNC   =  11'd128;   //行同步
-parameter  H_BACK   =  11'd88;  //行显示后沿
-parameter  H_DISP   =  11'd800; //行有效数据
-parameter  H_FRONT  =  11'd40;  //行显示前沿
-parameter  H_TOTAL  =  11'd1056; //行扫描周期
-
-parameter  V_SYNC   =  11'd3;    //场同步
-parameter  V_BACK   =  11'd21;   //场显示后沿
-parameter  V_DISP   =  11'd480;  //场有效数据
-parameter  V_FRONT  =  11'd1;    //场显示前沿
-parameter  V_TOTAL  =  11'd505;  //场扫描周期
     
 //reg define
 reg  [11:0] cnt_h;

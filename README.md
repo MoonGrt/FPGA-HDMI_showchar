@@ -47,6 +47,7 @@
 
 ```
 └─ Project
+  ├─ LICENSE
   ├─ ram_init_file.inithex
   ├─ README.md
   ├─ show_char.xpr
@@ -56,7 +57,6 @@
   ├─ /show_char.ip_user_files/
   ├─ /show_char.sim/
   └─ /show_char.srcs/
-    ├─ ram_init_file.inithex
     └─ /sources_1/
       ├─ dvi_transmitter_top.v
       ├─ encode.v

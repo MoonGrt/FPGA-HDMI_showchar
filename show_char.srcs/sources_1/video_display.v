@@ -1,4 +1,10 @@
-module  video_display(
+module  video_display
+#(
+    parameter H_DISP = 11'd800,        //分辨率--行
+    parameter V_DISP = 11'd480,        //分辨率--列
+    parameter CHAR_WIDTH  = 6'd16,     //字符宽度
+    parameter CHAR_HEIGHT = 6'd32      //字符高度
+)(
     input                pixel_clk,
     input                sys_rst_n,
     
@@ -11,11 +17,6 @@ module  video_display(
 );
 
 //parameter define
-localparam H_DISP = 11'd800;        //分辨率--行
-localparam V_DISP = 11'd480;        //分辨率--列
-localparam CHAR_WIDTH  = 6'd16;     //字符宽度
-localparam CHAR_HEIGHT = 6'd32;     //字符高度
-
 localparam WHITE  = 24'b11111111_11111111_11111111;  //RGB888 白色
 localparam BLACK  = 24'b00000000_00000000_00000000;  //RGB888 黑色
 localparam RED    = 24'b11111111_00000000_00000000;  //RGB888 红色
