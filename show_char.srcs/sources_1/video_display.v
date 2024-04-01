@@ -1,4 +1,4 @@
-module  video_display
+module video_display
 #(
     parameter H_DISP = 11'd800,        //分辨率--行
     parameter V_DISP = 11'd480,        //分辨率--列
