@@ -9,7 +9,7 @@ module  video_display
     input                sys_rst_n,
     
     input        [10:0]  pixel_xpos,  //像素点横坐标
-    input        [10:0]  pixel_ypos,  //像素点纵坐标
+    input        [10:0]  pixel_ypos,  //像素点纵坐标 
     output  reg  [23:0]  pixel_data,  //像素点数据
 
     input        [511:0] char_data,
